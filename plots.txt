@@ -1,0 +1,39 @@
+1) Model Comparison: Silhouette Score (Higher is Better)
+This chart shows that DBSCAN has the highest silhouette, meaning it forms the most “mathematically separated” clusters among the three.
+However, silhouette alone can be misleading when clusters are heavily imbalanced, which DBSCAN often produces on dense RFM data.
+From a business view, KMeans and Agglomerative provide more usable multi-segment groups, even if DBSCAN’s score looks better.
+
+2) Model Comparison: Davies–Bouldin Index (Lower is Better)
+DBSCAN shows the lowest Davies–Bouldin Index, meaning its clusters are very compact and well-separated under its density rules.
+But the business trade-off is that DBSCAN achieves this by isolating only a few groups and pushing many customers into one dominant cluster.
+For real-world campaigns, we prefer a model that supports clear segmentation strategy, not just “perfect separation”.
+
+3) Cluster Size Comparison (Customers per Cluster)
+This graph highlights a key operational factor: KMeans distributes customers more meaningfully across multiple clusters, while DBSCAN is dominated by one cluster.
+Agglomerative shows segmentation but still creates uneven clusters, suggesting overlap in customer behavior patterns.
+From a marketing execution perspective, KMeans gives the best balance for targeted campaigns, retention strategy, and budget allocation.
+
+4) Frequency vs Monetary (All 3 Models Side-by-Side)
+Across all models, a small number of customers show high frequency and high monetary value, representing your premium buyer segment.
+KMeans separates this high-value group more consistently, making it easier to define “VIP vs Regular vs Occasional” actions.
+For business impact, this directly supports cross-selling, loyalty campaigns, and boosting average order value (AOV).
+
+5) Recency vs Monetary (All 3 Models Side-by-Side)
+This visual clearly shows that customers with low recency (recent buyers) can vary greatly in spending, meaning not all active customers are high-value.
+KMeans creates clearer separation by capturing both “recent activity” and “high spending” as different behavioral groups.
+Business-wise, this enables retention prioritization, where high spend + recent buyers get premium benefits and high recency buyers get win-back offers.
+
+6) KMeans Cluster Centroids (Original Scale)
+This centroid plot summarizes each segment’s average behavior and reveals a strong “VIP” cluster with extremely high monetary value.
+It confirms the segmentation is meaningful because clusters represent distinct customer types, not random splits.
+In business terms, centroids act like segment personas that guide personalized discounts, loyalty tiers, and pricing strategy.
+
+7) Cluster Behavior Heatmap (RFM Means)
+The heatmap makes it easy to compare how each model forms clusters in terms of Recency, Frequency, and Monetary averages.
+It shows KMeans has a clean high-value cluster pattern, while Agglomerative and DBSCAN create clusters that can be harder to interpret at scale.
+This supports selecting KMeans for deployment because its segments are more explainable, stable, and actionable for decision-making.
+
+8) Correlation Matrix (Recency vs Frequency vs Monetary)
+Frequency and Monetary show a moderate positive correlation (~0.55), meaning repeat customers generally contribute higher revenue.
+Recency has a negative correlation with Frequency and Monetary, suggesting customers who haven’t purchased recently tend to spend less and buy less often.
+This directly supports business initiatives like early churn detection, win-back campaigns, and customer lifetime value (CLV) growth strategies.
