@@ -1,0 +1,32 @@
+Hypothetical Statement – 3 
+“Does the Recommendation System produce significantly higher similarity than random products?”
+Research Objective
+
+To validate that the item-based collaborative filtering model recommends products that are meaningfully more similar to the selected product than random product pairs.
+
+Null Hypothesis (H0)
+
+The average cosine similarity of the model’s Top-5 recommended products is not greater than the similarity of randomly selected products.
+
+Alternate Hypothesis (H1)
+
+The Top-5 recommendations have a significantly higher average cosine similarity than random product pairs, proving the recommendation system is effective.
+
+Statistical Test Used 
+
+Mann–Whitney U Test (one-sided: greater)
+Because similarity scores are not guaranteed to follow a normal distribution.
+
+Hypothesis Statement – 3 (Advanced Final Text)
+Which statistical test have you done to obtain P-Value?
+
+I performed a one-sided Mann–Whitney U Test to compare the cosine similarity scores of the Top-5 recommended products against a random recommendation baseline.
+
+Why did you choose the specific statistical test?
+
+Cosine similarity values do not follow a guaranteed normal distribution, and we are comparing two independent groups (Top-5 vs Random), so a non-parametric Mann–Whitney test is the most reliable choice.
+
+Final Conclusion
+
+Since the p-value ≈ 0.0 < 0.05, we reject the null hypothesis (H0) and confirm that the recommendation system produces significantly higher similarity than random suggestions, 
+validating the effectiveness of item-based collaborative filtering for real-world personalization.

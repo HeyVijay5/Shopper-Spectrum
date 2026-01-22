@@ -1,0 +1,50 @@
+Hypothetical Statement – 1 (Revenue by Country)
+1) Hypothesis Statement
+
+Business Question:
+Do customers from the United Kingdom generate a different transaction monetary value compared to Germany?
+
+Null Hypothesis (H0)
+
+There is no significant difference in transaction monetary value between United Kingdom and Germany.
+
+Alternate Hypothesis (H1)
+
+There is a significant difference in transaction monetary value between United Kingdom and Germany.
+
+2) Statistical Test (What we’ll use)
+
+ Mann–Whitney U Test (Non-parametric test)
+Because transaction monetary values are highly skewed (not normally distributed) and contain outliers.
+
+Hypothesis Statement – 1 (Final Conclusion Text)
+Which statistical test have you done to obtain P-Value?
+
+I performed the Mann–Whitney U Test to compare transaction monetary values between United Kingdom and Germany.
+
+Why did you choose the specific statistical test?
+
+This test was chosen because transaction totals are highly skewed with extreme outliers, making a non-parametric test more reliable than a normality-based t-test.
+
+Final Conclusion
+Since the p-value = 2.35e-09 < 0.05, we reject the null hypothesis (H0) and
+conclude that there is a statistically significant difference in transaction monetary values between UK and Germany.
+
+Statistical Test Used
+
+ Mann–Whitney U Test (Two-sided)
+
+Why this Statistical Test?
+
+Transaction monetary values are typically right-skewed, contain outliers, and violate normality assumptions.
+The Mann–Whitney U test is a non-parametric method that robustly detects differences between two independent groups without requiring normal distribution.
+
+Result Interpretation (using your output)
+
+Since p-value = 2.35 × 10⁻⁹ < 0.05, we reject H0 and conclude that UK and Germany have statistically 
+different transaction spending distributions.
+
+Business Impact (What this proves)
+
+This result supports implementing market-specific strategies, such as differentiated promotion 
+intensity, localized pricing approaches, and inventory planning based on geographic purchasing behavior.

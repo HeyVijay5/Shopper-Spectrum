@@ -1,0 +1,30 @@
+Hypothetical Statement – 2 (Customer Segments Spend Differently)
+Research Objective
+
+To verify whether the customer segments produced by KMeans RFM clustering show statistically significant differences in Monetary value, validating that the clustering is meaningful and business-actionable.
+
+Null Hypothesis (H0)
+
+The average Monetary value is the same across all customer clusters (no significant difference between segments).
+
+Alternate Hypothesis (H1)
+
+At least one cluster’s Monetary value differs significantly, meaning customer segments represent different spending behaviors.
+
+Statistical Test We Will Use 
+
+ Kruskal–Wallis H Test (Non-parametric ANOVA alternative)
+Because Monetary is skewed, has outliers, and clusters are independent.
+
+Hypothesis Statement – 2 
+Which statistical test have you done to obtain P-Value?
+
+I performed the Kruskal–Wallis H Test to compare Monetary spending distributions across multiple customer clusters generated from RFM-based KMeans segmentation.
+
+Why did you choose the specific statistical test?
+
+Monetary spending is highly skewed and outlier-driven, and we are comparing more than two independent clusters, so Kruskal–Wallis is the most reliable non-parametric alternative to ANOVA.
+
+Final Conclusion
+
+Since the p-value = 5.50e-248 < 0.05, we reject the null hypothesis (H0) and conclude that customer segments show statistically significant differences in spending, validating that the clustering is meaningful and business-actionable.
